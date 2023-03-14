@@ -1,0 +1,11 @@
+a = "CODE-HERE"
+b = ''
+
+for i in a:
+    b += chr(ord(i) ^ 19)
+
+hex_a = "".join([hex(ord(c))[2:].zfill(2) for c in a])
+
+print(hex_a)
+
+# Save script "name.py" run name.py payload.c hex code '')
